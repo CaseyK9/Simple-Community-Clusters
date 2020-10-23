@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SC Bot Clusters</title>
+  <link rel="icon" href="/img/scicon234.png">
+  <script src="/jquery/jquery.js"></script>
+  <link rel="stylesheet" href="/jquery/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
+  <script src="/jquery/jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="/jquery/jquery-jvectormap-world-mill.js"></script>
+  <style>
+  #world-map {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}</style>
+</head>
+<body>
+<div id="world-map"></div>
+<script>
+$(function(){
+  $('#world-map').vectorMap({
+    map: 'continents_mill',
+    scaleColors: ['#C8EEFF', '#0071A4'],
+    normalizeFunction: 'polynomial',
+    hoverOpacity: 0.7,
+    hoverColor: false,
+    markerStyle: {
+      initial: {
+        fill: '#F8E23B',
+        stroke: '#383f47'
+      }
+    },
+    backgroundColor: '#383f47',
+    markers: [
+      {latLng: [39.0915663, -94.5649141], name: 'Cluster One - North America'},
+      {latLng: [43.641649, -79.378086], name: 'Cluster Two - Canada/Alaska'},
+      {latLng: [51.425534, 6.688589], name: 'Cluster Three - Eastern Europe'},
+      {latLng: [40.740770, -74.002028], name: 'Cluster Four - US East'},
+      {latLng: [40.191863, -74.646608], name: 'Cluster Five - Hamilton, NJ'},
+      {latLng: [37.121857, -122.121190], name: 'Cluster Six - California'},
+      {latLng: [47.064192, 8.073097], name: 'Cluster Seven - Switzerland'},
+      {latLng: [37.493082, 127.009367], name: 'Cluster Eight - South Korea/Asia'},
+      {latLng: [53.848157, -0.433493], name: 'Cluster Nine - UK/West Yorkshire'},
+      {latLng: [51.411038, -0.185036], name: 'Cluster Ten - UK/London'},
+      {latLng: [52.169692, -8.491923], name: 'Cluster Eleven - Ireland'},
+      {latLng: [40.536826, -3.648591], name: 'Cluster Twelve - Spain'},
+      {latLng: [45.758089, 3.126730], name: 'Cluster Thirteen - France'},
+      {latLng: [51.744132, 19.452490], name: 'Cluster Fourteen - Poland'},
+      {latLng: [59.359378, 27.408657], name: 'Cluster Fifteen - Estonia'},
+      {latLng: [-37.566080, 143.863110], name: 'Cluster Sixteen - Australia'},
+      {latLng: [30.756306, 76.721915], name: 'Cluster Seventeen - India'},
+      {latLng: [14.626679, 120.985740], name: 'Cluster Eighteen - Phillipines'},
+      {latLng: [55.761453, 37.608872], name: 'Cluster Nineteen - Russia'},
+      {latLng: [-34.421789, 19.233688], name: 'Cluster Twenty - South Africa'},
+      {latLng: [14.719033, -17.455124], name: 'Cluster Twenty-One - Senegal'},
+      {latLng: [32.869956, 13.198830], name: 'Cluster Twenty-Two - Libya'},
+      {latLng: [37.971592, 34.680951], name: 'Cluster Twenty-Three - Turkey'},
+      {latLng: [30.576971, 105.287646], name: 'Cluster Twenty-Four - China'},
+      {latLng: [41.309862, 69.268573], name: 'Cluster Twenty-Five - Uzbekistan'},
+      {latLng: [-26.285628, -48.854153], name: 'Cluster Twenty-Six - South America'}
+    ]
+  });
+});
+</script>
+</body>
+</html>
